@@ -78,12 +78,15 @@ def layerController(request, layername):
         # center/zoom don't matter; the viewer will center on the layer bounds
         map = Map(projection="EPSG:900913")
 
+	qualityRecord = layer.qualitymatrix	
+
         return render_to_response('quality/layer.html', RequestContext(request, {
             "layer": layer,
             "metadata": metadata,
             "viewer": json.dumps(map.viewer_json(* (DEFAULT_BASE_LAYERS + [maplayer]))),
             "permissions_json": _perms_info_json(layer, LAYER_LEV_NAMES),
-            "GEOSERVER_BASE_URL": settings.GEOSERVER_BASE_URL
+            "GEOSERVER_BASE_URL": settings.GEOSERVER_BASE_URL,
+	    "qualityRecord": qualityRecord
             }))
 
 GENERIC_UPLOAD_ERROR = _("There was an error while attempting to upload your data. \
