@@ -1,0 +1,5 @@
+*.pyc
+*.~
+
+quality.egg-info/*
+
