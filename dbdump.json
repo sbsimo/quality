@@ -1,0 +1,2979 @@
+[
+    {
+        "pk": 10,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "avatar",
+            "name": "avatar",
+            "app_label": "avatar"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contact",
+            "name": "contact",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contactrole",
+            "name": "contact role",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contenttype",
+            "name": "content type",
+            "app_label": "contenttypes"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "genericobjectrolemapping",
+            "name": "generic object role mapping",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "group",
+            "name": "group",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "layer",
+            "name": "layer",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "layersubtopic",
+            "name": "layer subtopic",
+            "app_label": "quality"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "logentry",
+            "name": "log entry",
+            "app_label": "admin"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "map",
+            "name": "map",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "maplayer",
+            "name": "map layer",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "message",
+            "name": "message",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "objectrole",
+            "name": "object role",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "permission",
+            "name": "permission",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "qualitymatrix",
+            "name": "quality matrix",
+            "app_label": "quality"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "registrationprofile",
+            "name": "registration profile",
+            "app_label": "registration"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "role",
+            "name": "role",
+            "app_label": "maps"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "session",
+            "name": "session",
+            "app_label": "sessions"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "site",
+            "name": "site",
+            "app_label": "sites"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "user",
+            "name": "user",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "userobjectrolemapping",
+            "name": "user object role mapping",
+            "app_label": "core"
+        }
+    },
+    {
+        "pk": "8d88ab2484906b15ea2e4f1cfa65e88d",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-11-23 14:33:11",
+            "session_data": "gAJ9cQEoVRJfYXV0aF91c2VyX2JhY2tlbmRxAlUhZ2Vvbm9kZS5jb3JlLmF1dGguR3JhbnVsYXJC\nYWNrZW5kcQNVDV9hdXRoX3VzZXJfaWRxBEsCdS4xMGJjZjY3NzA1YWQxOTVjNTE1Mzk4Y2U2OWVh\nNjliYg==\n"
+        }
+    },
+    {
+        "pk": "5561819418fb7b3bd52322a04927935d",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-12-01 04:33:01",
+            "session_data": "gAJ9cQEuYjEzNWExMWZjNjk3ZDdlMDNkZjBhMzRjNjhmMjlmOWM=\n"
+        }
+    },
+    {
+        "pk": "0735a0f86fa25000abe13bddef875f88",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2011-12-01 04:33:02",
+            "session_data": "gAJ9cQEuYjEzNWExMWZjNjk3ZDdlMDNkZjBhMzRjNjhmMjlmOWM=\n"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "sites.site",
+        "fields": {
+            "domain": "example.com",
+            "name": "example.com"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 2,
+            "action_time": "2011-11-09 14:31:51",
+            "object_repr": "owner",
+            "object_id": "2",
+            "change_message": "No fields changed.",
+            "user": 1,
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 1,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2011-11-09 14:31:30",
+            "object_repr": "owner",
+            "object_id": "2",
+            "change_message": "",
+            "user": 1,
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 1,
+        "model": "maps.contact",
+        "fields": {
+            "city": null,
+            "fax": null,
+            "name": "Default Contact",
+            "area": null,
+            "country": null,
+            "zipcode": null,
+            "delivery": null,
+            "user": null,
+            "position": null,
+            "organization": "GeoNode",
+            "voice": null,
+            "email": null
+        }
+    },
+    {
+        "pk": 2,
+        "model": "maps.contact",
+        "fields": {
+            "city": null,
+            "fax": null,
+            "name": "Default Author",
+            "area": null,
+            "country": null,
+            "zipcode": null,
+            "delivery": null,
+            "user": null,
+            "position": null,
+            "organization": "Geonode",
+            "voice": null,
+            "email": null
+        }
+    },
+    {
+        "pk": 3,
+        "model": "maps.contact",
+        "fields": {
+            "city": null,
+            "fax": null,
+            "name": "Geonode Admin",
+            "area": null,
+            "country": null,
+            "zipcode": null,
+            "delivery": null,
+            "user": 1,
+            "position": null,
+            "organization": null,
+            "voice": null,
+            "email": null
+        }
+    },
+    {
+        "pk": 4,
+        "model": "maps.contact",
+        "fields": {
+            "city": null,
+            "fax": null,
+            "name": "owner",
+            "area": null,
+            "country": null,
+            "zipcode": null,
+            "delivery": null,
+            "user": 2,
+            "position": null,
+            "organization": null,
+            "voice": null,
+            "email": null
+        }
+    },
+    {
+        "pk": 1,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "",
+            "edition": null,
+            "keywords": null,
+            "distribution_url": null,
+            "spatial_representation_type": null,
+            "uuid": "06059d11-9034-447e-9649-c4c4b1f3698d",
+            "title": "NIC_0.5s_200y",
+            "owner": null,
+            "storeType": "coverageStore",
+            "abstract": "No abstract provided",
+            "store": "NIC_0.5s_200y",
+            "distribution_description": null,
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 13:59:48",
+            "temporal_extent_end": null,
+            "name": "NIC_0.5s_200y",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:NIC_0.5s_200y",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-88.003 10.495,-88.003 15.302,-82.597 15.302,-82.597 10.495,-88.003 10.495))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:NIC_0.5s_1000y",
+            "spatial_representation_type": null,
+            "uuid": "c5978ec7-68e9-43c7-be4e-3c54beb6b3b6",
+            "title": "NIC_0.5s_1000y",
+            "owner": null,
+            "storeType": "coverageStore",
+            "abstract": "No abstract provided",
+            "store": "NIC_Earthquake_1000y",
+            "distribution_description": "Online link to the 'NIC_0.5s_1000y' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:00",
+            "temporal_extent_end": null,
+            "name": "NIC_0.5s_1000y",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:NIC_0.5s_1000y",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-88.632 9.983,-88.632 15.528,-82.183 15.528,-82.183 9.983,-88.632 9.983))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:NIC_Rain_100y.grd",
+            "spatial_representation_type": null,
+            "uuid": "31b5f445-55e7-4e4f-a021-5546a9d0bcdf",
+            "title": "NIC_Rain_100y.grd",
+            "owner": null,
+            "storeType": "coverageStore",
+            "abstract": "No abstract provided",
+            "store": "NIC_Rain_100y",
+            "distribution_description": "Online link to the 'NIC_Rain_100y.grd' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:07",
+            "temporal_extent_end": null,
+            "name": "NIC_Rain_100y.grd",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:NIC_Rain_100y.grd",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-88.632 9.983,-88.632 15.528,-82.183 15.528,-82.183 9.983,-88.632 9.983))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:NIC_Rain_1000y.grd",
+            "spatial_representation_type": null,
+            "uuid": "6c3a95dd-c0c4-4d6a-b942-c02bb68b97b9",
+            "title": "NIC_Rain_1000y.grd",
+            "owner": null,
+            "storeType": "coverageStore",
+            "abstract": "No abstract provided",
+            "store": "NIC_Rain_1000y",
+            "distribution_description": "Online link to the 'NIC_Rain_1000y.grd' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:14",
+            "temporal_extent_end": null,
+            "name": "NIC_Rain_1000y.grd",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:NIC_Rain_1000y.grd",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-86.144 8.041,-86.144 11.221,-82.555 11.221,-82.555 8.041,-86.144 8.041))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/base:distrits",
+            "spatial_representation_type": null,
+            "uuid": "b13ef681-2d60-4bdf-9603-2ed1ae2f3b1f",
+            "title": "distrits",
+            "owner": null,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "distrits",
+            "distribution_description": "Online link to the 'distrits' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:21",
+            "temporal_extent_end": null,
+            "name": "distrits",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "base:distrits",
+            "workspace": "base",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-87.691 10.706,-87.691 15.031,-82.744 15.031,-82.744 10.706,-87.691 10.706))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/base:nic_admin",
+            "spatial_representation_type": null,
+            "uuid": "a9496215-8903-448b-af21-60d39637fd2c",
+            "title": "nic_admin",
+            "owner": null,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "nic_admin",
+            "distribution_description": "Online link to the 'nic_admin' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:29",
+            "temporal_extent_end": null,
+            "name": "nic_admin",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "base:nic_admin",
+            "workspace": "base",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-92.247 7.206,-92.247 18.49,-77.198 18.49,-77.198 7.206,-92.247 7.206))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/base:CA",
+            "spatial_representation_type": null,
+            "uuid": "f98f2401-90c8-4867-b7f7-bbfcc1db70cc",
+            "title": "CA",
+            "owner": null,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "CA",
+            "distribution_description": "Online link to the 'CA' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-09 14:18:36",
+            "temporal_extent_end": null,
+            "name": "CA",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "base:CA",
+            "workspace": "base",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": "saouenth",
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-16.481210708618164 4.352772235870361,-16.481210708618164 12.0,-6.0 12.0,-6.0 4.352772235870361,-16.481210708618164 4.352772235870361))",
+            "edition": "1.0",
+            "keywords": "aoeusnth",
+            "distribution_url": "http://localhost:8000/data/geonode:vmap1_polbnda",
+            "spatial_representation_type": "grid",
+            "uuid": "b5763b8e-0b12-11e1-b88b-0013cea68324",
+            "title": "vmap1_political_boundaries_areas",
+            "owner": 2,
+            "storeType": "dataStore",
+            "abstract": "aoeustnh",
+            "store": "vmap1_polbnda",
+            "distribution_description": "Online link to the 'vmap1_political_boundaries_areas' description on GeoNode",
+            "topic_category": "oceans",
+            "purpose": "snthaoue",
+            "date": "2011-11-09 14:37:57",
+            "temporal_extent_end": null,
+            "name": "vmap1_polbnda",
+            "language": "fra",
+            "keywords_region": "VIR",
+            "maintenance_frequency": "annually",
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:vmap1_polbnda",
+            "workspace": "geonode",
+            "data_quality_statement": "bbbeautiful",
+            "temporal_extent_start": null,
+            "constraints_use": "intellectualPropertyRights"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((8.537810350182724 15.895701852353682,8.537810350182724 27.398520363994464,25.174437123730343 27.398520363994464,25.174437123730343 15.895701852353682,8.537810350182724 15.895701852353682))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:eos",
+            "spatial_representation_type": null,
+            "uuid": "9d262cd8-1120-11e1-bb22-00014ac5f691",
+            "title": "eos",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "eos",
+            "distribution_description": "Online link to the 'eos' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:32:37",
+            "temporal_extent_end": null,
+            "name": "eos",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:eos",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((4.369003641266033 6.3614865088124475,4.369003641266033 19.408307505237133,15.794622028667618 19.408307505237133,15.794622028667618 6.3614865088124475,4.369003641266033 6.3614865088124475))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:fggdpop",
+            "spatial_representation_type": null,
+            "uuid": "a102893c-1120-11e1-bb22-00014ac5f691",
+            "title": "fggdpop",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "fggdpop",
+            "distribution_description": "Online link to the 'fggdpop' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:32:43",
+            "temporal_extent_end": null,
+            "name": "fggdpop",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:fggdpop",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((12.590816872740731 4.933284210387171,12.590816872740731 14.930700299363707,19.152827433072787 14.930700299363707,19.152827433072787 4.933284210387171,12.590816872740731 4.933284210387171))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:gpw",
+            "spatial_representation_type": null,
+            "uuid": "a4514858-1120-11e1-bb22-00014ac5f691",
+            "title": "gpw",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "gpw",
+            "distribution_description": "Online link to the 'gpw' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:32:49",
+            "temporal_extent_end": null,
+            "name": "gpw",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:gpw",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((2.7864010943623043 11.302294460121175,2.7864010943623043 29.637323966931206,15.678821842308764 29.637323966931206,15.678821842308764 11.302294460121175,2.7864010943623043 11.302294460121175))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:grump",
+            "spatial_representation_type": null,
+            "uuid": "a7bfbc7c-1120-11e1-bb22-00014ac5f691",
+            "title": "grump",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "grump",
+            "distribution_description": "Online link to the 'grump' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:32:54",
+            "temporal_extent_end": null,
+            "name": "grump",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:grump",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((16.759623581657593 17.90290508257283,16.759623581657593 28.131921544266902,24.634036254056014 28.131921544266902,24.634036254056014 17.90290508257283,16.759623581657593 17.90290508257283))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:landscan",
+            "spatial_representation_type": null,
+            "uuid": "ab1a70e2-1120-11e1-bb22-00014ac5f691",
+            "title": "landscan",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "landscan",
+            "distribution_description": "Online link to the 'landscan' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:33:00",
+            "temporal_extent_end": null,
+            "name": "landscan",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:landscan",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((1.010798236860694 24.966716450459614,1.010798236860694 32.995529371336374,6.453406995724265 32.995529371336374,6.453406995724265 24.966716450459614,1.010798236860694 24.966716450459614))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:wwdrii",
+            "spatial_representation_type": null,
+            "uuid": "ae8a3c58-1120-11e1-bb22-00014ac5f691",
+            "title": "wwdrii",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "wwdrii",
+            "distribution_description": "Online link to the 'wwdrii' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:33:06",
+            "temporal_extent_end": null,
+            "name": "wwdrii",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:wwdrii",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((1.358198795937085 21.454110797575993,1.358198795937085 30.75672576839969,8.113209666867249 30.75672576839969,8.113209666867249 21.454110797575993,1.358198795937085 21.454110797575993))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:avhhr",
+            "spatial_representation_type": null,
+            "uuid": "d4a4898e-1120-11e1-a5ea-00014ac5f691",
+            "title": "avhhr",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "avhhr",
+            "distribution_description": "Online link to the 'avhhr' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:10",
+            "temporal_extent_end": null,
+            "name": "avhhr",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:avhhr",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((-1.0 -1.0,-1.0 0.0,0.0 0.0,0.0 -1.0,-1.0 -1.0))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:esaglobcover",
+            "spatial_representation_type": null,
+            "uuid": "d86a5490-1120-11e1-a5ea-00014ac5f691",
+            "title": "esaglobcover",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "esaglobcover",
+            "distribution_description": "Online link to the 'esaglobcover' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:16",
+            "temporal_extent_end": null,
+            "name": "esaglobcover",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:esaglobcover",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((21.391631036009528 4.5086835270715255,21.391631036009528 11.91989545403493,27.413240726667084 11.91989545403493,27.413240726667084 4.5086835270715255,21.391631036009528 4.5086835270715255))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:fggd",
+            "spatial_representation_type": null,
+            "uuid": "dc092f90-1120-11e1-a5ea-00014ac5f691",
+            "title": "fggd",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "fggd",
+            "distribution_description": "Online link to the 'fggd' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:22",
+            "temporal_extent_end": null,
+            "name": "fggd",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:fggd",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((10.081812834966797 15.818501728114427,10.081812834966797 27.591520674592402,19.96342873758431 27.591520674592402,19.96342873758431 15.818501728114427,10.081812834966797 15.818501728114427))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:glc2000",
+            "spatial_representation_type": null,
+            "uuid": "dfcdde3c-1120-11e1-a5ea-00014ac5f691",
+            "title": "glc2000",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "glc2000",
+            "distribution_description": "Online link to the 'glc2000' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:28",
+            "temporal_extent_end": null,
+            "name": "glc2000",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:glc2000",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((4.137403268548326 22.72791284752293,4.137403268548326 31.760327383509264,7.4956086729534945 31.760327383509264,7.4956086729534945 22.72791284752293,4.137403268548326 22.72791284752293))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:glcc",
+            "spatial_representation_type": null,
+            "uuid": "e36e95a4-1120-11e1-a5ea-00014ac5f691",
+            "title": "glcc",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "glcc",
+            "distribution_description": "Online link to the 'glcc' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:35",
+            "temporal_extent_end": null,
+            "name": "glcc",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:glcc",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((6.453406995724265 8.986290732945179,6.453406995724265 19.331107380998105,13.131217742415231 19.331107380998105,13.131217742415231 8.986290732945179,6.453406995724265 8.986290732945179))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:globallandusedatasetsnasa",
+            "spatial_representation_type": null,
+            "uuid": "e71e9e06-1120-11e1-a5ea-00014ac5f691",
+            "title": "globallandusedatasetsnasa",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "globallandusedatasetsnasa",
+            "distribution_description": "Online link to the 'globallandusedatasetsnasa' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:41",
+            "temporal_extent_end": null,
+            "name": "globallandusedatasetsnasa",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:globallandusedatasetsnasa",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((13.131217742415231 17.86430502045323,13.131217742415231 27.205520053396356,21.584631346607637 27.205520053396356,21.584631346607637 17.86430502045323,13.131217742415231 17.86430502045323))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:globallandusedbsage",
+            "spatial_representation_type": null,
+            "uuid": "eac8b64a-1120-11e1-a5ea-00014ac5f691",
+            "title": "globallandusedbsage",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "globallandusedbsage",
+            "distribution_description": "Online link to the 'globallandusedbsage' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:47",
+            "temporal_extent_end": null,
+            "name": "globallandusedbsage",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:globallandusedbsage",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((20.27222923454127 13.348097752459978,20.27222923454127 27.47572048823372,27.529040913025938 27.47572048823372,27.529040913025938 13.348097752459978,20.27222923454127 13.348097752459978))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:globalmap",
+            "spatial_representation_type": null,
+            "uuid": "ee832432-1120-11e1-a5ea-00014ac5f691",
+            "title": "globalmap",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "globalmap",
+            "distribution_description": "Online link to the 'globalmap' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:34:53",
+            "temporal_extent_end": null,
+            "name": "globalmap",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:globalmap",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((9.657212151651152 4.817484024028488,9.657212151651152 14.58329974028726,21.082830539052736 14.58329974028726,21.082830539052736 4.817484024028488,9.657212151651152 4.817484024028488))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:landusesystemdb",
+            "spatial_representation_type": null,
+            "uuid": "f2e7aba6-1120-11e1-a5ea-00014ac5f691",
+            "title": "landusesystemdb",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "landusesystemdb",
+            "distribution_description": "Online link to the 'landusesystemdb' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:35:00",
+            "temporal_extent_end": null,
+            "name": "landusesystemdb",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:landusesystemdb",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "maps.layer",
+        "fields": {
+            "constraints_other": null,
+            "date_type": "publication",
+            "geographic_bounding_box": "SRID=EPSG:4326;POLYGON((21.00563041481348 24.619315891383224,21.00563041481348 28.479322103343293,27.2974405403084 28.479322103343293,27.2974405403084 24.619315891383224,21.00563041481348 24.619315891383224))",
+            "edition": null,
+            "keywords": "",
+            "distribution_url": "http://localhost:8000/data/geonode:mod12",
+            "spatial_representation_type": null,
+            "uuid": "f6c24ccc-1120-11e1-a5ea-00014ac5f691",
+            "title": "mod12",
+            "owner": 1,
+            "storeType": "dataStore",
+            "abstract": "No abstract provided",
+            "store": "mod12",
+            "distribution_description": "Online link to the 'mod12' description on GeoNode",
+            "topic_category": "location",
+            "purpose": null,
+            "date": "2011-11-17 07:35:07",
+            "temporal_extent_end": null,
+            "name": "mod12",
+            "language": "eng",
+            "keywords_region": "USA",
+            "maintenance_frequency": null,
+            "supplemental_information": "You can customize the template to suit your needs. You can add and remove fields and fill out default information (e.g. contact details). Fields you can not change in the default view may be accessible in the more comprehensive (and more complex) advanced view. You can even use the XML editor to create custom structures, but they have to be validated by the system, so know what you do :-)",
+            "typename": "geonode:mod12",
+            "workspace": "geonode",
+            "data_quality_statement": null,
+            "temporal_extent_start": null,
+            "constraints_use": "copyright"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 1,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 1,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 2,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 4,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 2,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 3,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 6,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 3,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 4,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 8,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 4,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 9,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 5,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 10,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 5,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 11,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 6,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 12,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 6,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 13,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 7,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 14,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 7,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 21,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 8,
+            "contact": 4,
+            "role": 1
+        }
+    },
+    {
+        "pk": 22,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 8,
+            "contact": 4,
+            "role": 2
+        }
+    },
+    {
+        "pk": 25,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 9,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 26,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 9,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 29,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 10,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 30,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 10,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 33,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 11,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 34,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 11,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 37,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 12,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 38,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 12,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 41,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 13,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 42,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 13,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 45,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 14,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 46,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 14,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 49,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 15,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 50,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 15,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 53,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 16,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 54,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 16,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 57,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 17,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 58,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 17,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 61,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 18,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 62,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 18,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 65,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 19,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 66,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 19,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 69,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 20,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 70,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 20,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 73,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 21,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 74,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 21,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 77,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 22,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 78,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 22,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 81,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 23,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 82,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 23,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 85,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 24,
+            "contact": 3,
+            "role": 1
+        }
+    },
+    {
+        "pk": 86,
+        "model": "maps.contactrole",
+        "fields": {
+            "layer": 24,
+            "contact": 3,
+            "role": 2
+        }
+    },
+    {
+        "pk": 1,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 5,
+            "layer": 8,
+            "positionalAccuracy": 5,
+            "completeness": 2,
+            "fitness4Use": 1,
+            "thematicAccuracy": 1,
+            "geographicExtent": 1,
+            "update": 4,
+            "integration": 3,
+            "dataIntegrity": 4,
+            "licensingConstraint": 2,
+            "thematicRichness": 2,
+            "scaleDenominator": 3
+        }
+    },
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_logentry",
+            "name": "Can add log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_logentry",
+            "name": "Can change log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_logentry",
+            "name": "Can delete log entry",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_group",
+            "name": "Can add group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_group",
+            "name": "Can change group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_group",
+            "name": "Can delete group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 10,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_message",
+            "name": "Can add message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 11,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_message",
+            "name": "Can change message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 12,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_message",
+            "name": "Can delete message",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_permission",
+            "name": "Can add permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_permission",
+            "name": "Can change permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_permission",
+            "name": "Can delete permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 7,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_user",
+            "name": "Can add user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 8,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_user",
+            "name": "Can change user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 9,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_user",
+            "name": "Can delete user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 28,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_avatar",
+            "name": "Can add avatar",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 29,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_avatar",
+            "name": "Can change avatar",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 30,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_avatar",
+            "name": "Can delete avatar",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 13,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contenttype",
+            "name": "Can add content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 14,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contenttype",
+            "name": "Can change content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contenttype",
+            "name": "Can delete content type",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 37,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_genericobjectrolemapping",
+            "name": "Can add generic object role mapping",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 38,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_genericobjectrolemapping",
+            "name": "Can change generic object role mapping",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 39,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_genericobjectrolemapping",
+            "name": "Can delete generic object role mapping",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 31,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_objectrole",
+            "name": "Can add object role",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 32,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_objectrole",
+            "name": "Can change object role",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 33,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_objectrole",
+            "name": "Can delete object role",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 34,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_userobjectrolemapping",
+            "name": "Can add user object role mapping",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 35,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_userobjectrolemapping",
+            "name": "Can change user object role mapping",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 36,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_userobjectrolemapping",
+            "name": "Can delete user object role mapping",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 40,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contact",
+            "name": "Can add contact",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 41,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contact",
+            "name": "Can change contact",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 42,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contact",
+            "name": "Can delete contact",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 59,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contactrole",
+            "name": "Can add contact role",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 60,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contactrole",
+            "name": "Can change contact role",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 61,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contactrole",
+            "name": "Can delete contact role",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 43,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_layer",
+            "name": "Can add layer",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 44,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_layer",
+            "name": "Can change layer",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 47,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_layer_permissions",
+            "name": "Can change permissions",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 45,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_layer",
+            "name": "Can delete layer",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 46,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "view_layer",
+            "name": "Can view",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 48,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_map",
+            "name": "Can add map",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 49,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_map",
+            "name": "Can change map",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 52,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_map_permissions",
+            "name": "Can change permissions",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 50,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_map",
+            "name": "Can delete map",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 51,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "view_map",
+            "name": "Can view",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 53,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_maplayer",
+            "name": "Can add map layer",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 54,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_maplayer",
+            "name": "Can change map layer",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 55,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_maplayer",
+            "name": "Can delete map layer",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 56,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_role",
+            "name": "Can add role",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 57,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_role",
+            "name": "Can change role",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 58,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_role",
+            "name": "Can delete role",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 65,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_layersubtopic",
+            "name": "Can add layer subtopic",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 66,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_layersubtopic",
+            "name": "Can change layer subtopic",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 67,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_layersubtopic",
+            "name": "Can delete layer subtopic",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 62,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_qualitymatrix",
+            "name": "Can add quality matrix",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 63,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_qualitymatrix",
+            "name": "Can change quality matrix",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 64,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_qualitymatrix",
+            "name": "Can delete quality matrix",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 25,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_registrationprofile",
+            "name": "Can add registration profile",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 26,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_registrationprofile",
+            "name": "Can change registration profile",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_registrationprofile",
+            "name": "Can delete registration profile",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 16,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 17,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 18,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 19,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_site",
+            "name": "Can add site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 20,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_site",
+            "name": "Can change site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 21,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_site",
+            "name": "Can delete site",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "simo",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2011-11-17 04:26:42",
+            "groups": [],
+            "user_permissions": [],
+            "password": "sha1$2f0b6$f77ebdb8f0b2de93cedaa4c28ba13879e7892f07",
+            "email": "simo@simo.si",
+            "date_joined": "2011-11-03 13:48:03"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "owner",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "last_login": "2011-11-09 14:33:10",
+            "groups": [],
+            "user_permissions": [],
+            "password": "sha1$55c49$fce98b16d0cc8996c6e92a292d6ff2c410fff23d",
+            "email": "",
+            "date_joined": "2011-11-09 14:31:30"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "map_readonly",
+            "list_order": 0,
+            "permissions": [
+                51
+            ],
+            "content_type": 16,
+            "title": "Read Only"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "map_readwrite",
+            "list_order": 1,
+            "permissions": [
+                49,
+                51
+            ],
+            "content_type": 16,
+            "title": "Read/Write"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "map_admin",
+            "list_order": 2,
+            "permissions": [
+                49,
+                52,
+                50,
+                51
+            ],
+            "content_type": 16,
+            "title": "Administrative"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "layer_readonly",
+            "list_order": 0,
+            "permissions": [
+                46
+            ],
+            "content_type": 15,
+            "title": "Read Only"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "layer_readwrite",
+            "list_order": 1,
+            "permissions": [
+                44,
+                46
+            ],
+            "content_type": 15,
+            "title": "Read/Write"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "core.objectrole",
+        "fields": {
+            "codename": "layer_admin",
+            "list_order": 2,
+            "permissions": [
+                44,
+                47,
+                45,
+                46
+            ],
+            "content_type": 15,
+            "title": "Administrative"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 2,
+            "object_id": 8
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 9
+        }
+    },
+    {
+        "pk": 3,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 10
+        }
+    },
+    {
+        "pk": 4,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 11
+        }
+    },
+    {
+        "pk": 5,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 12
+        }
+    },
+    {
+        "pk": 6,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 13
+        }
+    },
+    {
+        "pk": 7,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 14
+        }
+    },
+    {
+        "pk": 8,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 15
+        }
+    },
+    {
+        "pk": 9,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 16
+        }
+    },
+    {
+        "pk": 10,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 17
+        }
+    },
+    {
+        "pk": 11,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 18
+        }
+    },
+    {
+        "pk": 12,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 19
+        }
+    },
+    {
+        "pk": 13,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 20
+        }
+    },
+    {
+        "pk": 14,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 21
+        }
+    },
+    {
+        "pk": 15,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 22
+        }
+    },
+    {
+        "pk": 16,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 23
+        }
+    },
+    {
+        "pk": 17,
+        "model": "core.userobjectrolemapping",
+        "fields": {
+            "role": 6,
+            "object_ct": 15,
+            "user": 1,
+            "object_id": 24
+        }
+    },
+    {
+        "pk": 1,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 1,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 1,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 2,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 2,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 3,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 3,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 4,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 4,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 5,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 5,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 6,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 6,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 7,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 7,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 8,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 8,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 9,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 9,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 10,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 10,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 11,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 11,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 12,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 12,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 13,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 13,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 14,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 14,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 15,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 15,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 16,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 16,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 17,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 17,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 18,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 18,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 19,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 19,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 20,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 20,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 21,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 21,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 22,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 22,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 23,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 23,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 24,
+            "subject": "anonymous"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "core.genericobjectrolemapping",
+        "fields": {
+            "role": 4,
+            "object_ct": 15,
+            "object_id": 24,
+            "subject": "authenticated"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "maps.role",
+        "fields": {
+            "value": "pointOfContact",
+            "permissions": []
+        }
+    },
+    {
+        "pk": 2,
+        "model": "maps.role",
+        "fields": {
+            "value": "author",
+            "permissions": []
+        }
+    }
+]
