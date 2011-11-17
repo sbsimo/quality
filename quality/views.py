@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponse
 from geonode.maps.models import Map, MapLayer, Layer
 import json
-from django.template import RequestContext, loader
+from django.template import RequestContext, loader, Context
 from django.utils.translation import ugettext as _
 #from cartography.models import Document
 from django.contrib.auth.decorators import login_required
@@ -92,3 +92,11 @@ def layerController(request, layername):
 GENERIC_UPLOAD_ERROR = _("There was an error while attempting to upload your data. \
 Please try again, or contact and administrator if the problem continues.")
 
+def listSubtopics(request):
+    t = loader.get_template('quality/subtopics.html')
+    c = Context({
+	'number': 1,
+    })
+#    return HttpResponse("this is an example page, the real implementation \
+#    will follow!")
+    return HttpResponse(t.render(c))

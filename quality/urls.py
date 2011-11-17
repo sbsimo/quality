@@ -12,3 +12,6 @@ from django.conf.urls.defaults import patterns, url
 #	url(r'^upload/?$', 'cartography.views.upload_document', name='document-upload'),
 #	(r'^newmap$', newmaptpl),
 #)
+urlpatterns = patterns('',
+    url(r'^subtopics/','quality.views.listSubtopics'),
+)
