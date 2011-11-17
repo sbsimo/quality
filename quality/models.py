@@ -28,6 +28,8 @@ import os
 
 #signals.pre_save.connect(pre_save_document, sender=Document)
 
+# this model contains the results of the data quality assessment that has been
+# performed as an activity of the GMES project
 class QualityMatrix(models.Model):
     layer = models.OneToOneField(Layer)
     geographicExtent = models.IntegerField('Geographic Extent')
@@ -45,3 +47,10 @@ class QualityMatrix(models.Model):
 
     def __unicode__(self):
         return "bravo"
+
+class LayerSubtopic(models.Model):
+    layer = models.OneToOneField(Layer)
+    subtopic = models.CharField(max_length=100)
+
+    def __unicode__(self):
+	return subtopic
