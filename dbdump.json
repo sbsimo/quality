@@ -1586,6 +1586,318 @@
         }
     },
     {
+        "pk": 2,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 10,
+            "positionalAccuracy": 0,
+            "completeness": 3,
+            "fitness4Use": 5,
+            "thematicAccuracy": 5,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 3,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 2,
+            "scaleDenominator": 2
+        }
+    },
+    {
+        "pk": 3,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 11,
+            "positionalAccuracy": 0,
+            "completeness": 5,
+            "fitness4Use": 5,
+            "thematicAccuracy": 5,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 3
+        }
+    },
+    {
+        "pk": 4,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 12,
+            "positionalAccuracy": 0,
+            "completeness": 5,
+            "fitness4Use": 5,
+            "thematicAccuracy": 3,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 5,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 14,
+            "positionalAccuracy": 0,
+            "completeness": 5,
+            "fitness4Use": 5,
+            "thematicAccuracy": 5,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 3,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 1
+        }
+    },
+    {
+        "pk": 6,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 9,
+            "positionalAccuracy": 0,
+            "completeness": 5,
+            "fitness4Use": 5,
+            "thematicAccuracy": 5,
+            "geographicExtent": 5,
+            "update": 0,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 1
+        }
+    },
+    {
+        "pk": 7,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 13,
+            "positionalAccuracy": 0,
+            "completeness": 5,
+            "fitness4Use": 5,
+            "thematicAccuracy": 5,
+            "geographicExtent": 5,
+            "update": 2,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 8,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 18,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 9,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 19,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 4,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 3,
+            "dataIntegrity": 0,
+            "licensingConstraint": 5,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 10,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 15,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 4,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 11,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 24,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 4,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 4,
+            "dataIntegrity": 0,
+            "licensingConstraint": 5,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 12,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 16,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 3,
+            "integration": 2,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 5,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 13,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 17,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 4,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 4,
+            "scaleDenominator": 2
+        }
+    },
+    {
+        "pk": 14,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 22,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 3,
+            "integration": 5,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 4,
+            "scaleDenominator": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 23,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 3,
+            "integration": 1,
+            "dataIntegrity": 0,
+            "licensingConstraint": 4,
+            "thematicRichness": 4,
+            "scaleDenominator": 2
+        }
+    },
+    {
+        "pk": 16,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 21,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 5,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 0,
+            "integration": 3,
+            "dataIntegrity": 0,
+            "licensingConstraint": 0,
+            "thematicRichness": 5,
+            "scaleDenominator": 1
+        }
+    },
+    {
+        "pk": 17,
+        "model": "quality.qualitymatrix",
+        "fields": {
+            "temporalExtent": 0,
+            "layer": 20,
+            "positionalAccuracy": 0,
+            "completeness": 0,
+            "fitness4Use": 3,
+            "thematicAccuracy": 0,
+            "geographicExtent": 5,
+            "update": 1,
+            "integration": 3,
+            "dataIntegrity": 0,
+            "licensingConstraint": 5,
+            "thematicRichness": 5,
+            "scaleDenominator": 1
+        }
+    },
+    {
+        "pk": 1,
+        "model": "quality.layersubtopic",
+        "fields": {
+            "layer": 8,
+            "subtopic": "boundaries"
+        }
+    },
+    {
         "pk": 22,
         "model": "auth.permission",
         "fields": {

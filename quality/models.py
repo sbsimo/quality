@@ -53,4 +53,4 @@ class LayerSubtopic(models.Model):
     subtopic = models.CharField(max_length=100)
 
     def __unicode__(self):
-	return subtopic
+	return self.subtopic
