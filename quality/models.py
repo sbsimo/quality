@@ -48,9 +48,10 @@ class QualityMatrix(models.Model):
     def __unicode__(self):
         return "bravo"
 
+class Subtopic(models.Model):
+    title = models.CharField(max_length=100)
+
 class LayerSubtopic(models.Model):
     layer = models.OneToOneField(Layer)
-    subtopic = models.CharField(max_length=100)
+    subtopic = models.ForeignKey(Subtopic, verbose_name="the related subtopic")
 
-    def __unicode__(self):
-	return self.subtopic
