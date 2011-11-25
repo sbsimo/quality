@@ -29,7 +29,6 @@ Ext.onReady(function(){
 
 {% block main %}
 <div class="twocol">
-  <div id="search_form" class="block">
 
     <h2>This is a list of the available SubTopics</h2>
     <p>Please select the SubTopic of your interest in order to get the dataset of best quality!</p>
@@ -40,49 +39,8 @@ Ext.onReady(function(){
 	{% endfor %}
     </ul>
     
-	<a href="{% url geonode.maps.views.maps_search_page %}">Go!</a>
+	<a href="{% url quality.views.ask4weights %}">Go!</a>
 
-    <form action="{% url search %}" method="POST">
-        {% csrf_token %}
-        <table>
-          <tr>
-            <td>
-            <input type="text" id="search_query" name="q" />
-            </td>
-            <td>
-              <div id="submit_search"></div>
-            </td>
-          </tr>
-        </table>
-        <p>
-          <a href="{% url search %}">{% trans "Advanced Search" %}</a>
-        </p>
-    </form>
-  </div>
-
-  <!--
-  <div id="keywords" class="block">
-    <h2>{% trans "Browse" %} <span class="subtitle">{% trans "by keyword" %}</span></h2>
-    <div class="keywords_col1"></div>
-    <div class="keywords_col2"></div>
-    <div class="keywords_col3"></div>
-  </div>
-  --> 
-
-  <div id="upload" class="block">
-    <h2>{% trans "Upload" %}</h2>
-    <p>{% trans "We support Shapefile and GeoTIFF uploads." %}
-    <a class="layer-upload-link" href="{% url geonode.maps.views.upload_layer%}">{% trans "Upload a new layer"  %}</a>
-    </p>
-  </div>
-
-  <div class="block">
-    <h2>{% trans "For Developers" %}</h2>
-    {% blocktrans %} 
-    If you are interested in information about accessing this information through OGC services, please visit our
-    {% endblocktrans %}
-    <a href="{% url geonode.views.developer %}">{% trans "developer page" %}</a>.
-  </div>
 </div>
 {% endblock %}
 
