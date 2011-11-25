@@ -1,0 +1,58 @@
+{% extends "page_layout.html" %}
+{% load i18n %}
+
+{% block title %} {% trans "Browse Data" %} - {{ block.super }} {% endblock %}
+
+{% block head %}
+{% include "geonode/ext_header.html" %}
+{% include "geonode/app_header.html" %}
+{{ block.super }}
+<script type="text/javascript">
+Ext.onReady(function(){
+{% autoescape off %}
+  var submitForm = function() {
+      Ext.query('#search_form form')[0].submit();
+  };
+  var searchButton = new Ext.Button({renderTo: 'submit_search', text: '{% trans "Search" %}',
+                                     handler: submitForm});
+  var searchInput = new Ext.form.TextField({applyTo: 'search_query', width: 350});
+	
+	var goButton = new Ext.Button({
+		renderTo: 'ask_weights',
+		text: 'Go!',
+		handler: function(){window.location = "{%url geonode.maps.views.maps_search_page%}";}
+	});
+{% endautoescape %}
+});
+</script>
+{% endblock %}
+
+{% block main %}
+<div class="twocol">
+	<h2>Please define your weights for the SubTopic {{subtopic.title}}</h2>
+	<p>You can insert your own weights in the text boxes as numerical values between 0 and 10!</p>
+	<p>When you're done, please press the "Calculate" button</p>
+	<table>
+		<tr>
+			<td>
+				<p>Scale Denominator</p>
+			</td>
+			<td>
+				<input type="text"/>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="text"/>
+			</td>
+		</tr>
+	</table>
+</div>
+
+{% endblock %}
+
+{% block sidebar %}
+  {% block sidebar_info %}    
+  {% endblock %}
+
+{% endblock %}

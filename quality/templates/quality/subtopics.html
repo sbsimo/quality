@@ -16,6 +16,12 @@ Ext.onReady(function(){
   var searchButton = new Ext.Button({renderTo: 'submit_search', text: '{% trans "Search" %}',
                                      handler: submitForm});
   var searchInput = new Ext.form.TextField({applyTo: 'search_query', width: 350});
+	
+	var goButton = new Ext.Button({
+		renderTo: 'ask_weights',
+		text: 'Go!',
+		handler: function(){window.location = "{%url geonode.maps.views.maps_search_page%}";}
+	});
 {% endautoescape %}
 });
 </script>
@@ -25,8 +31,16 @@ Ext.onReady(function(){
 <div class="twocol">
   <div id="search_form" class="block">
 
-    <h2>This is the list of available SubTopics</h2>
+    <h2>This is a list of the available SubTopics</h2>
     <p>Please select the SubTopic of your interest in order to get the dataset of best quality!</p>
+
+    <ul>
+	{% for LS in allLS %}
+	    <li>{{LS.subtopic.title}}</li>
+	{% endfor %}
+    </ul>
+    
+	<a href="{% url geonode.maps.views.maps_search_page %}">Go!</a>
 
     <form action="{% url search %}" method="POST">
         {% csrf_token %}

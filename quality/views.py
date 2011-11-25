@@ -11,6 +11,7 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.decorators import login_required
 from geonode.maps.views import default_map_config
 from django.views.decorators.csrf import csrf_exempt
+from quality.models import Subtopic, LayerSubtopic
 
 #imgtypes = ['jpg','jpeg','tif','tiff','png','gif']
 
@@ -93,10 +94,22 @@ GENERIC_UPLOAD_ERROR = _("There was an error while attempting to upload your dat
 Please try again, or contact and administrator if the problem continues.")
 
 def listSubtopics(request):
+    layerSubtopic = LayerSubtopic.objects.get(pk=1)
+    subtopic = layerSubtopic.subtopic
+    allLayerSubtopics = LayerSubtopic.objects.distinct('subtopic')
     t = loader.get_template('quality/subtopics.html')
     c = Context({
-	'number': 1,
+	'subtopic': subtopic,
+	'allLS': allLayerSubtopics,
     })
 #    return HttpResponse("this is an example page, the real implementation \
 #    will follow!")
+    return HttpResponse(t.render(c))
+
+def ask4weights(request):
+    subtopic = Subtopic.objects.get(pk=1)
+    t = loader.get_template('quality/ask4weights.html')
+    c = Context({
+	'subtopic': subtopic,
+    })
     return HttpResponse(t.render(c))
