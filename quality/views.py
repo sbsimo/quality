@@ -104,7 +104,11 @@ def listSubtopics(request):
     })
 #    return HttpResponse("this is an example page, the real implementation \
 #    will follow!")
-    return HttpResponse(t.render(c))
+#    return HttpResponse(t.render(c))
+    return render_to_response('quality/subtopics.html', RequestContext(request, {
+	'subtopic': subtopic,
+	'allLS': allLayerSubtopics,
+        }))
 
 def ask4weights(request):
     subtopic = Subtopic.objects.get(pk=1)
