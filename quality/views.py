@@ -116,4 +116,7 @@ def ask4weights(request):
     c = Context({
 	'subtopic': subtopic,
     })
-    return HttpResponse(t.render(c))
+#    return HttpResponse(t.render(c))
+    return render_to_response('quality/ask4weights.html', RequestContext(request, {
+	'subtopic': subtopic,
+        }))
