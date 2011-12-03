@@ -1,6 +1,6 @@
 from geonode import settings
 from geonode.maps.views import _perms_info, MAP_LEV_NAMES, _perms_info_json, \
-LAYER_LEV_NAMES
+LAYER_LEV_NAMES, _describe_layer
 from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponse
 from geonode.maps.models import Map, MapLayer, Layer
