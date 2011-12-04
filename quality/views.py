@@ -108,15 +108,17 @@ def listSubtopics(request):
     return render_to_response('quality/subtopics.html', RequestContext(request, {
 	'subtopic': subtopic,
 	'allLS': allLayerSubtopics,
-        }))
+	}))
 
 def ask4weights(request):
-    subtopic = Subtopic.objects.get(pk=1)
-    t = loader.get_template('quality/ask4weights.html')
-    c = Context({
-	'subtopic': subtopic,
-    })
-#    return HttpResponse(t.render(c))
-    return render_to_response('quality/ask4weights.html', RequestContext(request, {
-	'subtopic': subtopic,
-        }))
+	if request.method == 'GET':
+		subtopic_pk = request.GET.__getitem__("subtopic")[0]
+		subtopic = Subtopic.objects.get(pk=subtopic_pk)
+		return render_to_response('quality/ask4weights.html', RequestContext(request, {
+		'subtopic': subtopic,
+		'subtopic_pk': subtopic_pk,
+		}))
+	else:
+		return HttpResponse(loader.render_to_string('401.html',
+                RequestContext(request, {'error_message':
+                    _("You are not permitted to view this layer")})), status=401)

@@ -37,15 +37,13 @@ Ext.onReady(function(){
 		<fieldset>
 			<legend>Questo é un test di legenda</legend>
 			{% for LS in allLS %}
-	    		<input type="radio" name="subtopic" value={{LS.subtopic.title}}/>{{LS.subtopic.title}}
+	    		<input type="radio" name="subtopic" value={{LS.subtopic.pk}}/>{{LS.subtopic.title}}
 				<br>
 			{% endfor %}
-			<input type="button" value="Click Me!" name="testname">
+			<input type="submit" value="Click Me!">
 		</fieldset>
 	</form>
     
-	<a href="{% url quality.views.ask4weights %}">Go!</a>
-
 </div>
 {% endblock %}
 
