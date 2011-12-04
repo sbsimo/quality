@@ -15,4 +15,5 @@ from django.conf.urls.defaults import patterns, url
 urlpatterns = patterns('',
     url(r'^subtopics/','quality.views.listSubtopics'),
     url(r'^ask4weights/','quality.views.ask4weights'),
+	url(r'^weights/','quality.views.calculateBest')
 )

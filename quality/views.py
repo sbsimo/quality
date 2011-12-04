@@ -11,7 +11,7 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.decorators import login_required
 from geonode.maps.views import default_map_config
 from django.views.decorators.csrf import csrf_exempt
-from quality.models import Subtopic, LayerSubtopic
+from quality.models import Subtopic, LayerSubtopic, QualityMatrix
 
 #imgtypes = ['jpg','jpeg','tif','tiff','png','gif']
 
@@ -118,6 +118,21 @@ def ask4weights(request):
 		'subtopic': subtopic,
 		'subtopic_pk': subtopic_pk,
 		}))
+	else:
+		return HttpResponse(loader.render_to_string('401.html',
+                RequestContext(request, {'error_message':
+                    _("You are not permitted to view this layer")})), status=401)
+
+def calculateBest(request):
+	if request.method == 'GET':
+		scaleDenominator = request.GET.__getitem__("scaleDenominator")
+		l1 = QualityMatrix.objects.get(pk=3).layer
+		layername = l1.typename
+		return layerController(request, layername)
+#		return render_to_response('quality/temp.html', RequestContext(request, {
+#		'scaleDenominator': scaleDenominator,
+#		'layername': layername,
+#		}))
 	else:
 		return HttpResponse(loader.render_to_string('401.html',
                 RequestContext(request, {'error_message':

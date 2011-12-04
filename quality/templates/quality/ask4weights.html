@@ -34,7 +34,19 @@ Ext.onReady(function(){
 	<p>You can insert your own weights in the text boxes as numerical values between 0 and 10!</p>
 	<p>When you're done, please press the "Calculate" button</p>
 	<p>{{a}}</p>
-	<table>
+	<form action="/quality/weights" method="GET">
+		<fieldset>
+			<legend>Preferred weights:</legend>
+			Scale Denominator - <input type="text" name="scaleDenominator">
+			<br>
+			Geopraphic Extent - <input type="text" name="geographicExtent">
+			<br>
+			subtopic code - <input type="text" name="subtopic_pk" value ={{subtopic.pk}} readonly="readonly">
+			<br>
+			<input type="submit" value="Calculate!">
+		</fieldset>
+	</form>
+<!--	<table>
 		<tr>
 			<td>
 				<p>Scale Denominator</p>
@@ -52,7 +64,7 @@ Ext.onReady(function(){
 			</td>
 		</tr>
 		<tr><td>...</td></tr>
-	</table>
+	</table>-->
 </div>
 
 {% endblock %}
