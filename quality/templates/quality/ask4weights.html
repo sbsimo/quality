@@ -29,19 +29,37 @@ Ext.onReady(function(){
 
 {% block main %}
 <div class="twocol">
-	<h2>Please define your weights for the SubTopic:</h2>
 	<h2>{{subtopic.title}}</h2>
-	<p>You can insert your own weights in the text boxes as numerical values between 0 and 10!</p>
-	<p>When you're done, please press the "Calculate" button</p>
-	<p>{{a}}</p>
+	<p>Please define your own weights between 0 and 10!</p>
+	<p>When you're done, press the "Calculate" button in order to get the dataset with best quality</p>
 	<form action="/quality/weights" method="GET">
 		<fieldset>
-			<legend>Preferred weights:</legend>
+			<legend>Quality Indicators:</legend>
+			Geographic Extent - <input type="text" name="geographicExtent">
+			<br>
+			Licensing and Constraints - <input type="text" name="licensingConstraint">
+			<br>
 			Scale Denominator - <input type="text" name="scaleDenominator">
 			<br>
-			Geopraphic Extent - <input type="text" name="geographicExtent">
+			Update - <input type="text" name="update">
 			<br>
-			subtopic code - <input type="text" name="subtopic_pk" value ={{subtopic.pk}} readonly="readonly">
+			Temporal Extent - <input type="text" name="temporalExtent">
+			<br>
+			Fitness for Use - <input type="text" name="fitness4use">
+			<br>
+			Thematic Richness - <input type="text" name="thematicRichness">
+			<br>
+			Integration - <input type="text" name="integration">
+			<br>
+			Data Integrity - <input type="text" name="dataIntegrity">
+			<br>
+			Positional Accuracy - <input type="text" name="positionalAccuracy">
+			<br>
+			Thematic Accuracy - <input type="text" name="thematicAccuracy">
+			<br>
+			Completeness - <input type="text" name="completeness">
+			<br> 
+			The subtopic code is <input type="text" name="subtopic_pk" value ={{subtopic.pk}} readonly="readonly">
 			<br>
 			<input type="submit" value="Calculate!">
 		</fieldset>

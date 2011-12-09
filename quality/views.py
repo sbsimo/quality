@@ -115,14 +115,26 @@ def ask4weights(request):
 
 def calculateBest(request):
 	if request.method == 'GET':
-		scaleDenominator = request.GET.__getitem__("scaleDenominator")
+		weightVector = [request.GET.__getitem__("geographicExtent")]
+		weightVector.append(request.GET.__getitem__("licensingConstraint"))
+		weightVector.append(request.GET.__getitem__("scaleDenominator"))
+		weightVector.append(request.GET.__getitem__("update"))
+		weightVector.append(request.GET.__getitem__("temporalExtent"))
+		weightVector.append(request.GET.__getitem__("fitness4use"))
+		weightVector.append(request.GET.__getitem__("thematicRichness"))
+		weightVector.append(request.GET.__getitem__("integration"))
+		weightVector.append(request.GET.__getitem__("dataIntegrity"))
+		weightVector.append(request.GET.__getitem__("positionalAccuracy"))
+		weightVector.append(request.GET.__getitem__("thematicAccuracy"))
+		weightVector.append(request.GET.__getitem__("completeness"))
+
 		l1 = QualityMatrix.objects.get(pk=3).layer
 		layername = l1.typename
-		return layerController(request, layername)
-#		return render_to_response('quality/temp.html', RequestContext(request, {
-#		'scaleDenominator': scaleDenominator,
-#		'layername': layername,
-#		}))
+#		return layerController(request, layername)
+		return render_to_response('quality/temp.html', RequestContext(request, {
+		'weightVector': weightVector,
+		'layername': layername,
+		}))
 	else:
 		return HttpResponse(loader.render_to_string('401.html',
                 RequestContext(request, {'error_message':
