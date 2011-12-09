@@ -30,20 +30,22 @@ Ext.onReady(function(){
 {% block main %}
 <div class="twocol">
 
-    <h2>This is a list of the available SubTopics</h2>
-    <p>Please select the SubTopic of your interest in order to get the dataset of best quality!</p>
+    <h2>This is the list of the data sub-topics available in the server</h2>
+    <p>Please select your subtopic of interest in order to get the dataset of best quality!</p>
 
 	<form action="/quality/ask4weights" method="GET">
 		<fieldset>
-			<legend>Questo é un test di legenda</legend>
-			{% for LS in allLS %}
-	    		<input type="radio" name="subtopic" value={{LS.subtopic.pk}}/>{{LS.subtopic.title}}
-				<br>
+			<legend>Available sub-topics</legend>
+			{% for oneSub in allSubs %}
+				{% if oneSub.layersubtopic_set.count > 0 %}
+		    		<input type="radio" name="subtopic" value={{oneSub.pk}}/>{{oneSub.title}}
+					<br>
+				{% endif %}
 			{% endfor %}
-			<input type="submit" value="Click Me!">
+			<input type="submit" value="Next">
 		</fieldset>
 	</form>
-    
+
 </div>
 {% endblock %}
 

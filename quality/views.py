@@ -94,20 +94,10 @@ GENERIC_UPLOAD_ERROR = _("There was an error while attempting to upload your dat
 Please try again, or contact and administrator if the problem continues.")
 
 def listSubtopics(request):
-    layerSubtopic = LayerSubtopic.objects.get(pk=1)
-    subtopic = layerSubtopic.subtopic
-    allLayerSubtopics = LayerSubtopic.objects.distinct('subtopic')
-    t = loader.get_template('quality/subtopics.html')
-    c = Context({
-	'subtopic': subtopic,
-	'allLS': allLayerSubtopics,
-    })
-#    return HttpResponse("this is an example page, the real implementation \
-#    will follow!")
-#    return HttpResponse(t.render(c))
-    return render_to_response('quality/subtopics.html', RequestContext(request, {
-	'subtopic': subtopic,
-	'allLS': allLayerSubtopics,
+#	access to the table that contains the list of subtopics
+	allSubtopics = Subtopic.objects.all()
+	return render_to_response('quality/subtopics.html', RequestContext(request, {
+	'allSubs' : allSubtopics,
 	}))
 
 def ask4weights(request):
