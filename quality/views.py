@@ -115,6 +115,7 @@ def ask4weights(request):
 
 def calculateBest(request):
 	if request.method == 'GET':
+#		get the weights input by the client
 		weightVector = [request.GET.__getitem__("geographicExtent")]
 		weightVector.append(request.GET.__getitem__("licensingConstraint"))
 		weightVector.append(request.GET.__getitem__("scaleDenominator"))
@@ -127,14 +128,41 @@ def calculateBest(request):
 		weightVector.append(request.GET.__getitem__("positionalAccuracy"))
 		weightVector.append(request.GET.__getitem__("thematicAccuracy"))
 		weightVector.append(request.GET.__getitem__("completeness"))
+#		get the subtopic and the set of related layersubtopics
+		subtopic_id = request.GET.__getitem__("subtopic_pk")
+		subtopic = Subtopic.objects.get(pk=subtopic_id)
+		layersubtopics = subtopic.layersubtopic_set.all()
+#		define initial values
+		winner_layer_id = 0
+		bestScore = 0
+#		loop on layersubtopics in order to calculate the total score for each one
+		for layersubtopic in layersubtopics:
+			currentLayer = layersubtopic.layer
+			qualityVector = QualityMatrix.objects.get(layer=currentLayer)
+#			calculate the quality total score of the layer
+			comparisonScore = qualityVector.geographicExtent*weightVector[0]+\
+			qualityVector.licensingConstraint*weightVector[1]+\
+			qualityVector.scaleDenominator*weightVector[2]+\
+			qualityVector.update*weightVector[3]+\
+			qualityVector.temporalExtent*weightVector[4]+\
+			qualityVector.fitness4Use*weightVector[5]+\
+			qualityVector.thematicRichness*weightVector[6]+\
+			qualityVector.integration*weightVector[7]+\
+			qualityVector.dataIntegrity*weightVector[8]+\
+			qualityVector.positionalAccuracy*weightVector[9]+\
+			qualityVector.thematicAccuracy*weightVector[10]+\
+			qualityVector.completeness*weightVector[11]
+			if comparisonScore > bestScore:
+				bestScore = comparisonScore
+				winner_layer_id = layersubtopic.layer.id
 
-		l1 = QualityMatrix.objects.get(pk=3).layer
-		layername = l1.typename
-#		return layerController(request, layername)
-		return render_to_response('quality/temp.html', RequestContext(request, {
-		'weightVector': weightVector,
-		'layername': layername,
-		}))
+		winnerLayer = Layer.objects.get(id=winner_layer_id)
+		layername = winnerLayer.typename
+		return layerController(request, layername)
+#		return render_to_response('quality/temp.html', RequestContext(request, {
+#		'weightVector': weightVector,
+#		'layername': layername,
+#		}))
 	else:
 		return HttpResponse(loader.render_to_string('401.html',
                 RequestContext(request, {'error_message':
