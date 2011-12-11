@@ -130,12 +130,68 @@
 
 {% block main %}
 <div class="twocol">
-<div id="description"> <h3> {{ layer.resource.title|default:layer.typename }} </h3> </div>
-<p> <strong>{% trans "Abstract" %}:</strong> {{ layer.abstract|default:_("No abstract for this layer.") }} </p>
+	<div id="description"> <h3> {{ layer.resource.title|default:layer.typename }} </h3> </div>
+	<p> <strong>{% trans "Abstract" %}:</strong> {{ layer.abstract|default:_("No abstract for this layer.") }} </p>
 
-<div id="preview_map"></div>
+	<div id="preview_map"></div>
 
-<p><strong>GMES Quality Assessment Results: </strong>for example the score assigned to the geographic extent is equal to {{qualityRecord.geographicExtent}}<p>
+	<p><strong>GMES Quality Assessment Results</strong></p>
+
+	<table border="1">
+		<tr>
+			<th>Indicator</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>Geographic Extent</td>
+			<td>{{qualityRecord.geographicExtent}}</td>
+		</tr>
+		<tr>
+			<td>Licensing and Constraints</td>
+			<td>{{qualityRecord.licensingConstraint}}</td>
+		</tr>
+		<tr>
+			<td>Scale Denominator</td>
+			<td>{{qualityRecord.scaleDenominator}}</td>
+		</tr>
+		<tr>
+			<td>Update</td>
+			<td>{{qualityRecord.update}}</td>
+		</tr>
+		<tr>
+			<td>Temporal Extent</td>
+			<td>{{qualityRecord.temporalExtent}}</td>
+		</tr>
+		<tr>
+			<td>Fitness for Use</td>
+			<td>{{qualityRecord.fitness4Use}}</td>
+		</tr>
+		<tr>
+			<td>Thematic Richness</td>
+			<td>{{qualityRecord.thematicRichness}}</td>
+		</tr>
+		<tr>
+			<td>Integration</td>
+			<td>{{qualityRecord.integration}}</td>
+		</tr>
+		<tr>
+			<td>Data Integrity</td>
+			<td>{{qualityRecord.dataIntegrity}}</td>
+		</tr>
+		<tr>
+			<td>Positional Accuracy</td>
+			<td>{{qualityRecord.positionalAccuracy}}</td>
+		</tr>
+		<tr>
+			<td>Thematic Accuracy</td>
+			<td>{{qualityRecord.thematicAccuracy}}</td>
+		</tr>
+		<tr>
+			<td>Completeness</td>
+			<td>{{qualityRecord.completeness}}</td>
+		</tr>
+	</table>
+
 {% if layer.display_type %}<p> <strong>{% trans "Type" %}:</strong> {{ layer.display_type }} </p>{% endif %}
 {% if layer.keywords %}<p> <strong>{% trans "Keywords" %}:</strong> {{ layer.keywords }}</p>{% endif %}
 {% if layer.edition %}<p> <strong>{% trans "Edition" %}:</strong> {{ layer.edition }}</p>{% endif %}
