@@ -35,31 +35,60 @@ Ext.onReady(function(){
 	<form action="/quality/weights" method="GET">
 		<fieldset>
 			<legend>Quality Indicators:</legend>
-			Geographic Extent - <input type="text" name="geographicExtent">
-			<br>
-			Licensing and Constraints - <input type="text" name="licensingConstraint">
-			<br>
-			Scale Denominator - <input type="text" name="scaleDenominator">
-			<br>
-			Update - <input type="text" name="update">
-			<br>
-			Temporal Extent - <input type="text" name="temporalExtent">
-			<br>
-			Fitness for Use - <input type="text" name="fitness4use">
-			<br>
-			Thematic Richness - <input type="text" name="thematicRichness">
-			<br>
-			Integration - <input type="text" name="integration">
-			<br>
-			Data Integrity - <input type="text" name="dataIntegrity">
-			<br>
-			Positional Accuracy - <input type="text" name="positionalAccuracy">
-			<br>
-			Thematic Accuracy - <input type="text" name="thematicAccuracy">
-			<br>
-			Completeness - <input type="text" name="completeness">
-			<br> 
-			The subtopic code is <input type="text" name="subtopic_pk" value ={{subtopic.pk}} readonly="readonly">
+				<table>
+				<tr>
+					<td>Geographic Extent</td>
+					<td><input type="text" size=3 name="geographicExtent"></td>
+				</tr>
+				<tr>
+					<td>Licensing and Constraints  </td>
+					<td><input type="text" size=3 name="licensingConstraint"></td>
+				</tr>
+				<tr>
+					<td>Scale Denominator</td>
+					<td><input type="text" size=3 name="scaleDenominator"></td>
+				</tr>
+				<tr>
+					<td>Update</td>
+					<td><input type="text" size=3 name="update"></td>
+				</tr>
+				<tr>
+					<td>Temporal Extent</td>
+					<td><input type="text" size=3 name="temporalExtent"></td>
+				</tr>
+				<tr>
+					<td>Fitness for Use</td>
+					<td><input type="text" size=3 name="fitness4use"></td>
+				</tr>
+				<tr>
+					<td>Thematic Richness</td>
+					<td><input type="text" size=3 name="thematicRichness"></td>
+				</tr>
+				<tr>
+					<td>Integration</td>
+					<td><input type="text" size=3 name="integration"></td>
+				</tr>
+				<tr>
+					<td>Data Integrity</td>
+					<td><input type="text" size=3 name="dataIntegrity"></td>
+				</tr>
+				<tr>
+					<td>Positional Accuracy</td>
+					<td><input type="text" size=3 name="positionalAccuracy"></td>
+				</tr> 
+				<tr>
+					<td>Thematic Accuracy</td>
+					<td><input type="text" size=3 name="thematicAccuracy"></td>
+				</tr>
+				<tr>
+					<td>Completeness</td>
+					<td><input type="text" size=3 name="completeness"></td>
+				</tr> 
+				<tr>
+					<td>The subtopic code is</td>
+					<td><input type="text" size=3 name="subtopic_pk" value ={{subtopic.pk}} readonly="readonly"></td>
+				</tr>
+			</table>
 			<br>
 			<input type="submit" value="Calculate!">
 		</fieldset>
