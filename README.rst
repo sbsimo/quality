@@ -6,11 +6,12 @@ This is a GeoNode application aimed to publishing the data quality assessment re
 Installation
 ------------
 
-#. Install the application::
+#. Install the application:
 	source bin/activate
+
 	pip install -e git+git://github.com/sbsimo/quality.git
 
-#. Add ``quality`` to the variable INSTALLED_APPS in the Django settings.py file
+#. Add `quality` to the variable INSTALLED_APPS in the Django settings.py file
 
 #. Add the following line to the variable TEMPLATE_DIRS in the Django settings.py file::
 	os.path.join(PROJECT_ROOT, "..", "..", 'quality', 'quality', "templates"),
