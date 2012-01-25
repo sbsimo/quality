@@ -11,12 +11,12 @@ Installation
 
 	pip install -e git+git://github.com/sbsimo/quality.git
 
-#. Add `quality` to the variable INSTALLED_APPS in the Django settings.py file
+#. Add `quality` to the variable INSTALLED_APPS in the Django settings.py file.
 
-#. Add the following line to the variable TEMPLATE_DIRS in the Django settings.py file::
+#. Add the following line to the variable TEMPLATE_DIRS in the Django settings.py file:
 	os.path.join(PROJECT_ROOT, "..", "..", 'quality', 'quality', "templates"),
 
-#. Append the following line to the Django urls.py module, in the variable urlpatterns::
+#. Append the following line to the Django urls.py module, in the variable urlpatterns:
 	(r'^quality/', include('quality.urls')),
 
 #. Modify the following line in the urls.py module:
