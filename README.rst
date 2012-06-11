@@ -18,11 +18,5 @@ Installation
 
 #. Append the following line to the Django urls.py module, in the variable urlpatterns:
 	(r'^quality/', include('quality.urls')),
-
-#. Modify the following line in the urls.py module:
-	(r'^data/(?P<layername>[^/]*)$', 'geonode.maps.views.layerController'),
-
-	and substitute with the following:
-	(r'^data/(?P<layername>[^/]*)$', 'quality.views.layerController'),
 	
 #. Run ``syncdb`` command and reload the web server in order to get to see the application working

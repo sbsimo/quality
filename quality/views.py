@@ -1,7 +1,7 @@
 from geonode import settings
 from geonode.maps.views import _perms_info, MAP_LEV_NAMES, _perms_info_json, \
 LAYER_LEV_NAMES, _describe_layer
-from django.shortcuts import render_to_response, get_object_or_404
+from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.http import HttpResponse
 from geonode.maps.models import Map, MapLayer, Layer
 import json
@@ -158,7 +158,8 @@ def calculateBest(request):
 
 		winnerLayer = Layer.objects.get(id=winner_layer_id)
 		layername = winnerLayer.typename
-		return layerController(request, layername)
+		return redirect("/data/" + layername)
+#		return layerController(request, layername)
 #		return render_to_response('quality/temp.html', RequestContext(request, {
 #		'weightVector': weightVector,
 #		'layername': layername,
