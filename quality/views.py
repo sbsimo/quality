@@ -132,33 +132,38 @@ def calculateBest(request):
 		subtopic_id = request.GET.__getitem__("subtopic_pk")
 		subtopic = Subtopic.objects.get(pk=subtopic_id)
 		layersubtopics = subtopic.layersubtopic_set.all()
-#		define initial values
-		winner_layer_id = 0
-		bestScore = 0
+#		generate a dictionary needed for storing the results of the total score calculation
+		results = {}
 #		loop on layersubtopics in order to calculate the total score for each one
+#		and store them into the newly created dictionary
 		for layersubtopic in layersubtopics:
 			currentLayer = layersubtopic.layer
 			qualityVector = QualityMatrix.objects.get(layer=currentLayer)
 #			calculate the quality total score of the layer
-			comparisonScore = qualityVector.geographicExtent*weightVector[0]+\
-			qualityVector.licensingConstraint*weightVector[1]+\
-			qualityVector.scaleDenominator*weightVector[2]+\
-			qualityVector.update*weightVector[3]+\
-			qualityVector.temporalExtent*weightVector[4]+\
-			qualityVector.fitness4Use*weightVector[5]+\
-			qualityVector.thematicRichness*weightVector[6]+\
-			qualityVector.integration*weightVector[7]+\
-			qualityVector.dataIntegrity*weightVector[8]+\
-			qualityVector.positionalAccuracy*weightVector[9]+\
-			qualityVector.thematicAccuracy*weightVector[10]+\
-			qualityVector.completeness*weightVector[11]
-			if comparisonScore > bestScore:
-				bestScore = comparisonScore
-				winner_layer_id = layersubtopic.layer.id
+			currentScore = 0
+			currentScore = qualityVector.geographicExtent*int(weightVector[0]) +\
+			qualityVector.licensingConstraint*int(weightVector[1])+\
+			qualityVector.scaleDenominator*int(weightVector[2])+\
+			qualityVector.update*int(weightVector[3])+\
+			qualityVector.temporalExtent*int(weightVector[4])+\
+			qualityVector.fitness4Use*int(weightVector[5])+\
+			qualityVector.thematicRichness*int(weightVector[6])+\
+			qualityVector.integration*int(weightVector[7])+\
+			qualityVector.dataIntegrity*int(weightVector[8])+\
+			qualityVector.positionalAccuracy*int(weightVector[9])+\
+			qualityVector.thematicAccuracy*int(weightVector[10])+\
+			qualityVector.completeness*int(weightVector[11])
+			curLayerId = layersubtopic.layer.id
+			curLayerName = Layer.objects.get(id=curLayerId)
+			results[curLayerName] = currentScore
 
-		winnerLayer = Layer.objects.get(id=winner_layer_id)
-		layername = winnerLayer.typename
-		return redirect("/data/" + layername)
+		return render_to_response("quality/layerRanking.html", RequestContext(request, {
+		"results" : results,
+		}))
+
+#		winnerLayer = Layer.objects.get(id=winner_layer_id)
+#		layername = winnerLayer.typename
+#		return redirect("/data/" + layername)
 #		return layerController(request, layername)
 #		return render_to_response('quality/temp.html', RequestContext(request, {
 #		'weightVector': weightVector,

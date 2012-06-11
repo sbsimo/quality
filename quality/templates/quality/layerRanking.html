@@ -7,55 +7,33 @@
 {% include "geonode/ext_header.html" %}
 {% include "geonode/app_header.html" %}
 {{ block.super }}
-<script type="text/javascript">
-Ext.onReady(function(){
-{% autoescape off %}
-  var submitForm = function() {
-      Ext.query('#search_form form')[0].submit();
-  };
-  var searchButton = new Ext.Button({renderTo: 'submit_search', text: '{% trans "Search" %}',
-                                     handler: submitForm});
-  var searchInput = new Ext.form.TextField({applyTo: 'search_query', width: 350});
-	
-	var goButton = new Ext.Button({
-		renderTo: 'ask_weights',
-		text: 'Go!',
-		handler: function(){window.location = "{%url geonode.maps.views.maps_search_page%}";}
-	});
-{% endautoescape %}
-});
-</script>
 {% endblock %}
 
 {% block main %}
 <div class="twocol">
 
-    <h2>This is the list of the data sub-topics available in the server</h2>
-    <p>Please select your subtopic of interest in order to get the dataset of best quality!</p>
-
-	<form action="/quality/ask4weights" method="GET">
-		<fieldset>
-			<legend>Available sub-topics</legend>
-			{% for oneSub in allSubs %}
-				{% if oneSub.layersubtopic_set.count > 0 %}
-		    		<input type="radio" name="subtopic" value={{oneSub.pk}}/>{{oneSub.title}}
-					<br>
-				{% endif %}
-			{% endfor %}
-			<input type="submit" value="Next">
-		</fieldset>
-	</form>
+    <h2>This is the list of the layers in the sub-topic of interest</h2>
+    <p>They're listed according to the respective total score: click on an item in order to get
+		to the data page</p>
 
 	<p><strong>GMES Quality Assessment Results</strong></p>
 
 	<table border="5" frame="vsides">
-		<tr>
-			<th>Indicator</th>
+		{% for layer, score in results.items %}
+			<tr>
+				<td align='center'>{{layer.title}}</td>
+				<td align='center'>{{score}}</td>
+				<td align='center'><a href="{{"/data/"|add:layer.typename}}">link</a></td>
+			</tr>
+		{% endfor %}
+	</table>
+
+<!--			<th>Indicator</th>
 			<th>Score</th>
-		</tr>
+
 		<tr>
 			<td>Geographic Extent</td>
-			<td align='center'>{{qualityRecord.geographicExtent}}</td>
+
 		</tr>
 		<tr>
 			<td>Licensing and Constraints</td>
@@ -102,7 +80,7 @@ Ext.onReady(function(){
 			<td align='center'>{{qualityRecord.completeness}}</td>
 		</tr>
 	</table>
-
+-->
 </div>
 {% endblock %}
 
