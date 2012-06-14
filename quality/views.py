@@ -133,7 +133,7 @@ def calculateBest(request):
 		subtopic = Subtopic.objects.get(pk=subtopic_id)
 		layersubtopics = subtopic.layersubtopic_set.all()
 #		generate a dictionary needed for storing the results of the total score calculation
-		results = {}
+		results = []
 #		loop on layersubtopics in order to calculate the total score for each one
 #		and store them into the newly created dictionary
 		for layersubtopic in layersubtopics:
@@ -141,6 +141,7 @@ def calculateBest(request):
 			qualityVector = QualityMatrix.objects.get(layer=currentLayer)
 #			calculate the quality total score of the layer
 			currentScore = 0
+			unWeightedScore = 0
 			currentScore = qualityVector.geographicExtent*int(weightVector[0]) +\
 			qualityVector.licensingConstraint*int(weightVector[1])+\
 			qualityVector.scaleDenominator*int(weightVector[2])+\
@@ -153,9 +154,16 @@ def calculateBest(request):
 			qualityVector.positionalAccuracy*int(weightVector[9])+\
 			qualityVector.thematicAccuracy*int(weightVector[10])+\
 			qualityVector.completeness*int(weightVector[11])
+			unWeightedScore = qualityVector.geographicExtent +\
+			qualityVector.licensingConstraint + qualityVector.scaleDenominator +\
+			qualityVector.update + qualityVector.temporalExtent + \
+			qualityVector.fitness4Use + qualityVector.thematicRichness + \
+			qualityVector.integration + qualityVector.dataIntegrity + \
+			qualityVector.positionalAccuracy + qualityVector.thematicAccuracy + \
+			qualityVector.completeness
 			curLayerId = layersubtopic.layer.id
 			curLayerName = Layer.objects.get(id=curLayerId)
-			results[curLayerName] = currentScore
+			results.append([curLayerName, currentScore, unWeightedScore])
 
 		return render_to_response("quality/layerRanking.html", RequestContext(request, {
 		"results" : results,

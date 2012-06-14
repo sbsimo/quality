@@ -13,17 +13,21 @@
 <div class="twocol">
 
     <h2>This is the list of the layers in the sub-topic of interest</h2>
-    <p>They're listed according to the respective total score: click on an item in order to get
-		to the data page</p>
+    <p>For each of them the total score, both weighted and unweighted, got from the GMES RDA Lot2 quality indicators, is shown in the table below</p>
 
 	<p><strong>GMES Quality Assessment Results</strong></p>
 
 	<table border="5" frame="vsides">
-		{% for layer, score in results.items %}
+		<tr>
+			<th align='left'>Layer title</th>
+			<th align='left'>Unweighted score</th>
+			<th align='left'>Weighted score</th>
+		</tr>
+		{% for layer, score, unWeightedScore in results %}
 			<tr>
-				<td align='center'>{{layer.title}}</td>
+				<td align='left'><a href="{{"/data/"|add:layer.typename}}">{{layer.title}}</a></td>
+				<td align='center'>{{unWeightedScore}}</td>
 				<td align='center'>{{score}}</td>
-				<td align='center'><a href="{{"/data/"|add:layer.typename}}">link</a></td>
 			</tr>
 		{% endfor %}
 	</table>
